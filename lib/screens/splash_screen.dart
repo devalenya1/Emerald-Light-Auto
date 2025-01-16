@@ -159,7 +159,7 @@ class _SplashScreenState extends State<SplashScreen> {
         ),
       ),
     );
-  }
+  } 
 
   Future<String?>  getSharedValueHelperData()async{
     access_token.load().whenComplete(() {
