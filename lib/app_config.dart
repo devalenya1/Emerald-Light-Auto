@@ -12,10 +12,10 @@ class AppConfig {
   static String mobile_app_code = "en";
   static bool app_language_rtl = false;
 
-  //configure this
+  //configure this demo.activeitzone.com/ecommerce emeraldlightauto.uk
   static const bool HTTPS = true;
 
-  static const DOMAIN_PATH = "emeraldlightauto.uk"; //localhost
+  static const DOMAIN_PATH = "demo.activeitzone.com/ecommerce"; //localhost
 
   //do not configure these below
   static const String API_ENDPATH = "api/v2";

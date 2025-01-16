@@ -87,7 +87,7 @@ class CartRepository {
       middleware: BannedUser()
     );
     return cartProcessResponseFromJson(response.body);
-  }
+  } 
 
   Future<dynamic> getCartAddResponse( int? id,  String? variant,
        int? user_id,  int? quantity) async {

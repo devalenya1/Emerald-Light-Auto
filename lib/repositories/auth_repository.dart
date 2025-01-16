@@ -19,7 +19,7 @@ class AuthRepository {
   Future<LoginResponse> getLoginResponse(String? email, String password) async {
     var post_body = jsonEncode({
       "email": "${email}",
-      "password": "$password",
+      "password": "$password", 
       "identity_matrix": AppConfig.purchase_code
     });
 
