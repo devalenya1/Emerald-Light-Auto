@@ -146,7 +146,7 @@ class _HomeState extends State<Home> with TickerProviderStateMixin {
                                 //     ),
                                 //   ),
                                 // )
-                                    : Container(),
+                                    // : Container(),
                                 buildHomeCarouselSlider(context, homeData),
                                 Padding(
                                   padding: const EdgeInsets.fromLTRB(
