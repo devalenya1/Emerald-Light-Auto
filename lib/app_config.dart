@@ -4,7 +4,7 @@ class AppConfig {
   static String copyright_text =
       "@ EmeraldLightAuto " + this_year; //this shows in the splash screen
   static String app_name = "Emerald Light Auto"; //this shows in the splash screen
-  static String purchase_code = ""; //enter your purchase code for the app from codecanyon
+  static String purchase_code = "bkash"; //enter your purchase code for the app from codecanyon
   //static String purchase_code = ""; //enter your purchase code for the app from codecanyon
 
   //Default language config
