@@ -15,7 +15,7 @@ class AppConfig {
   //configure this demo.activeitzone.com/ecommerce emeraldlightauto.uk
   static const bool HTTPS = true;
 
-  static const DOMAIN_PATH = "emeraldlightauto.uk"; //localhost
+  static const DOMAIN_PATH = "airsoftauctions.co.uk"; //localhost
 
   //do not configure these below
   static const String API_ENDPATH = "api/v2";
