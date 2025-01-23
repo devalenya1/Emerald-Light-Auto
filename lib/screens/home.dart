@@ -41,27 +41,27 @@ class _HomeState extends State<Home> with TickerProviderStateMixin {
 
   @override
   void initState() {
-    // Future.delayed(Duration.zero).then((value) {
-    //   change();
-    // });
+    Future.delayed(Duration.zero).then((value) {
+      change();
+    });
     
     // TODO: implement initState
     super.initState();
   }
 
-  // change() {
-  //   homeData.onRefresh();
-  //   homeData.mainScrollListener();
-  //   homeData.initPiratedAnimation(this);
-  // }
-
-  @override
-  void dispose() {
-    homeData.pirated_logo_controller.dispose();
-  //  ChangeNotifierProvider<HomePresenter>.value(value: value)
-    super.dispose();
-
+  change() {
+    homeData.onRefresh();
+    homeData.mainScrollListener();
+    // homeData.initPiratedAnimation(this);
   }
+
+  // @override
+  // void dispose() {
+  //   homeData.pirated_logo_controller.dispose();
+  // //  ChangeNotifierProvider<HomePresenter>.value(value: value)
+  //   super.dispose();
+
+  // }
 
   @override
   Widget build(BuildContext context) {
@@ -100,53 +100,53 @@ class _HomeState extends State<Home> with TickerProviderStateMixin {
                           slivers: <Widget>[
                             SliverList(
                               delegate: SliverChildListDelegate([
-                                AppConfig.purchase_code == ""
-                                    ? Padding(
-                                  padding: const EdgeInsets.fromLTRB(
-                                    9.0,
-                                    16.0,
-                                    9.0,
-                                    0.0,
-                                  ),
-                                  child: Container(
-                                    height: 140,
-                                    color: Colors.black,
-                                    child: Stack(
-                                      children: [
-                                        Positioned(
-                                            left: 20,
-                                            top: 0,
-                                            child: AnimatedBuilder(
-                                                animation: homeData
-                                                    .pirated_logo_animation,
-                                                builder: (context, child) {
-                                                  return Image.asset(
-                                                    "assets/pirated_square.png",
-                                                    height: homeData
-                                                        .pirated_logo_animation
-                                                        .value,
-                                                    color: Colors.white,
-                                                  );
-                                                })),
-                                        Center(
-                                          child: Padding(
-                                            padding: const EdgeInsets.only(
-                                                top: 24.0,
-                                                left: 24,
-                                                right: 24),
-                                            child: Text(
-                                              "This is a pirated app. Do not use this. It may have security issues.",
-                                              style: TextStyle(
-                                                  color: Colors.white,
-                                                  fontSize: 18),
-                                            ),
-                                          ),
-                                        ),
-                                      ],
-                                    ),
-                                  ),
-                                )
-                                    : Container(),
+                            //     AppConfig.purchase_code == ""
+                            //         ? Padding(
+                            //       padding: const EdgeInsets.fromLTRB(
+                            //         9.0,
+                            //         16.0,
+                            //         9.0,
+                            //         0.0,
+                            //       ),
+                            //       child: Container(
+                            //         height: 140,
+                            //         color: Colors.black,
+                            //         child: Stack(
+                            //           children: [
+                            //             Positioned(
+                            //                 left: 20,
+                            //                 top: 0,
+                            //                 child: AnimatedBuilder(
+                            //                     animation: homeData
+                            //                         .pirated_logo_animation,
+                            //                     builder: (context, child) {
+                            //                       return Image.asset(
+                            //                         "assets/pirated_square.png",
+                            //                         height: homeData
+                            //                             .pirated_logo_animation
+                            //                             .value,
+                            //                         color: Colors.white,
+                            //                       );
+                            //                     })),
+                            //             Center(
+                            //               child: Padding(
+                            //                 padding: const EdgeInsets.only(
+                            //                     top: 24.0,
+                            //                     left: 24,
+                            //                     right: 24),
+                            //                 child: Text(
+                            //                   "This is a pirated app. Do not use this. It may have security issues.",
+                            //                   style: TextStyle(
+                            //                       color: Colors.white,
+                            //                       fontSize: 18),
+                            //                 ),
+                            //               ),
+                            //             ),
+                            //           ],
+                            //         ),
+                            //       ),
+                            //     )
+                            //         : Container(),
                                 buildHomeCarouselSlider(context, homeData),
                                 Padding(
                                   padding: const EdgeInsets.fromLTRB(
