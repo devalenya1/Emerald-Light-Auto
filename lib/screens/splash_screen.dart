@@ -40,13 +40,14 @@ class _SplashScreenState extends State<SplashScreen> {
     super.initState();
     _initPackageInfo();
     getSharedValueHelperData().then((value){
-      Future.delayed(Duration(seconds: 3)).then((value) {
-        Provider.of<LocaleProvider>(context,listen: false).setLocale(app_mobile_language.$!);
+      Future.delayed(Duration(seconds: 10)).then((value) {
+        // Provider.of<LocaleProvider>(context,listen: false).setLocale(app_mobile_language.$!);
         Navigator.pushAndRemoveUntil(context,
           MaterialPageRoute(builder: (context) {
             return Main(go_back: false,);
           },
-          ),(route)=>false,);
+          ));
+          // ,(route)=>false,);
       }
       );
     });

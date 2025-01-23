@@ -114,7 +114,7 @@ class _MyAppState extends State<MyApp> {
       (value) async {
         Firebase.initializeApp().then((value) {
           if (OtherConfig.USE_PUSH_NOTIFICATION) {
-            Future.delayed(Duration(milliseconds: 10), () async {
+            Future.delayed(Duration(milliseconds: 100), () async {
               PushNotificationService().initialise();
             });
           }
@@ -135,7 +135,7 @@ class _MyAppState extends State<MyApp> {
         ],
         child: Consumer<LocaleProvider>(builder: (context, provider, snapshot) {
           return MaterialApp(
-            initialRoute: "/",
+            initialRoute: "/login",
             routes:
               {
                 "/":(context)=>SplashScreen(),
