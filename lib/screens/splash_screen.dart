@@ -46,8 +46,7 @@ class _SplashScreenState extends State<SplashScreen> {
           MaterialPageRoute(builder: (context) {
             return Main(go_back: false,);
           },
-          ));
-          // ,(route)=>false,);
+          ),(route)=>false,);
       }
       );
     });
