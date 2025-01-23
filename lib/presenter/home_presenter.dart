@@ -221,7 +221,7 @@ class HomePresenter extends ChangeNotifier {
   //   pirated_logo_controller.dispose();
   //   notifyListeners();
   // }
-  //
+  
 
   @override
   void dispose() {
