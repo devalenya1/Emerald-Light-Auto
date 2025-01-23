@@ -75,7 +75,7 @@ main() async {
     DeviceOrientation.portraitUp,
     DeviceOrientation.portraitDown,
   ]);
-
+ 
   // AddonsHelper().setAddonsData();
   // BusinessSettingHelper().setBusinessSettingData();
   // app_language.load();
@@ -211,7 +211,7 @@ class _MyAppState extends State<MyApp> {
               }
               return const Locale('en');
             },
-            //home: SplashScreen(),
+            // home: SplashScreen(),
             // home: Splash(),
           );
         }));
